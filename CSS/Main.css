@@ -3,7 +3,20 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    background-color: rgb(252, 250, 233);
 }
-header{
 
+header:not(#logoimage){
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+#logoimage{
+    width: 64px;
+    height: auto;
+}
+#githublogo{
+    width: 32px;
+    height: auto;
 }
