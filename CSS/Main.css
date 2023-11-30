@@ -10,7 +10,7 @@
 header:not(#logoimage){
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
 }
 #logoimage{
@@ -29,6 +29,9 @@ header:not(#logoimage){
 }
 footer{
     text-align: center;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: center;
 }
 #contactform{
     display: flex;
@@ -97,7 +100,10 @@ a:hover{
     margin-left: 20px;
     float: left;
 }
-@media (max-device-width:1000px){
+p{
+    max-width: 1600px;
+}
+/* @media (max-device-width:1000px){
     @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *{
     margin: 0;
@@ -198,4 +204,4 @@ a:hover{
     float: left;
 }
     
-}
+} */
