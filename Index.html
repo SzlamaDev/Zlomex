@@ -14,12 +14,16 @@
 <body>
     <header>
         <img src="IMG/logo.png" alt="logo" id="logoimage">
-        <nav>
-            <a href="Index.html">Home</a>
-            <a href="#">O nas</a>
-            <a href="#">Produkty</a>
-            <a href="Contact.html">Kontakt</a>
-        </nav>
+        <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Produkty</a></li>
+      <li><a href="Contact.html">Kontakt</a></li>
+    </ul>
         <div id="socialmedia">
             <a href="https://github.com/SzlamaDev"><img src="IMG/github.svg" id="githublogo"></a>
         </div>
@@ -73,6 +77,11 @@
             <p>Nowa maska Volksvagen Passat</p>
             <a href="#">Czytaj więcej</a>
         </div>
+        <div class="produkt" id="produkt5">
+            <img src="IMG/wahacz.png">
+            <p>Nowy Wahacz Fiat 126p</p>
+            <a href="#">Czytaj więcej</a>
+        </div>
         </div>
         <div style="clear: both;"></div>
     </article>
@@ -90,5 +99,12 @@
         <a href="sources.html">Źródła</a>
         <a href="Rules.html">Regulamin</a>
     </footer>
+    <script>
+        var y=document.querySelector('.menu-icon');
+        y.addEventListener("click", function(){
+            this.classList.toggle("yes")
+        });
+        
+    </script>
 </body>
 </html>
