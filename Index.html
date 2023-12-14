@@ -19,7 +19,7 @@
     <label class='menu-button-container' for="menu-toggle">
     <div class='menu-button' onclick="menu()"></div>
   </label>
-    <ul class="menu">
+    <ul class="menu2">
       <li><a href="Index.html">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Produkty</a></li>
@@ -33,8 +33,8 @@
         <div id="phonemenu" class="visible">
             <ul class="menu">
                 <li><a href="Index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Produkty</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Produkty</a></li>
                 <li><a href="Contact.html">Kontakt</a></li>
               </ul>
         </div>
@@ -69,27 +69,27 @@
         <div class="produkt" id="produkt1">
             <img src="IMG/katalizator.png">
             <p>Nowy katalizator Jeep Grand Cherokee</p>
-            <a href="#">Czytaj więcej</a>
+            <a href="#" onclick="zmian1()">Czytaj więcej</a>
         </div>
         <div class="produkt" id="produkt2">
             <img src="IMG/alternator.png">
             <p>Nowy alternator Dacia Duster</p>
-            <a href="#">Czytaj więcej</a>
+            <a href="#" onclick="zmian2()">Czytaj więcej</a>
         </div>
         <div class="produkt" id="produkt3">
             <img src="IMG/maglownica.png">
             <p>Używana maglownica Fiat Seicento</p>
-            <a href="#">Czytaj więcej</a>
+            <a href="#" onclick="zmian3()">Czytaj więcej</a>
         </div>
         <div class="produkt" id="produkt4">
             <img src="IMG/maska.png">
             <p>Nowa maska Volksvagen Passat</p>
-            <a href="#">Czytaj więcej</a>
+            <a href="#" onclick="zmian4()">Czytaj więcej</a>
         </div>
         <div class="produkt" id="produkt5">
             <img src="IMG/wahacz.png">
             <p>Nowy Wahacz Fiat 126p</p>
-            <a href="#">Czytaj więcej</a>
+            <a href="#" onclick="zmian5()">Czytaj więcej</a>
         </div>
         </div>
         <div style="clear: both;"></div>
@@ -97,9 +97,7 @@
     <article id="aboutproducts">
         <h2>O produkcie</h2>
         <p id="productswitch">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae molestias error
-            officia maxime sit ab consectetur, dolore architecto, modi mollitia hic. Quasi
-            necessitatibus suscipit fugiat nisi ab reiciendis quibusdam vitae!
+            Informacje o produkcie
         </p>
     </article>
     <!-- <hr> -->
@@ -108,12 +106,5 @@
         <a href="sources.html">Źródła</a>
         <a href="Rules.html">Regulamin</a>
     </footer>
-    <script>
-        var y=document.querySelector('.menu-icon');
-        y.addEventListener("click", function(){
-            this.classList.toggle("yes")
-        });
-        
-    </script>
 </body>
 </html>
